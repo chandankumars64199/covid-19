@@ -1,0 +1,352 @@
+#%%
+
+my_pred
+
+#%%
+
+# Calculate the accuracy score
+my_score = linreg.score(X_test, y_test)
+
+#%%
+
+print(my_score)
+
+#%%
+
+# Total Individuals Registered
+x = []
+y = 6
+for i in range(139):
+    x.append(y)
+    y += 10
+valid_data = data.iloc[:, x]
+valid_data.drop('Unnamed: 1346', axis=1, inplace=True)
+valid_data.drop('Unnamed: 1356', axis=1, inplace=True)
+valid_data.drop('Unnamed: 1366', axis=1, inplace=True)
+valid_data.drop('Unnamed: 1376', axis=1, inplace=True)
+valid_data.drop('Unnamed: 1386', axis=1, inplace=True)
+valid_data.drop(0, axis=0, inplace=True)
+valid_data = valid_data.dropna()
+X = valid_data.iloc[:, :-1]
+y = valid_data.iloc[:, -1]
+
+from sklearn.model_selection import train_test_split as tts
+from sklearn.linear_model import LinearRegression
+linreg = LinearRegression()
+X_train, X_test, y_train, y_test = tts(X, y, test_size=0.3, random_state=10)
+linreg.fit(X_train, y_train)
+my_pred = linreg.predict(X_test)
+my_score = linreg.score(X_test, y_test)
+print(my_score)
+
+#%%
+
+# Prediction for Total Sites
+x = []
+y = 8
+for i in range(139):
+    x.append(y)
+    y += 10
+valid_data = data.iloc[:, x]
+valid_data.drop('Unnamed: 1348', axis=1, inplace=True)
+valid_data.drop('Unnamed: 1358', axis=1, inplace=True)
+valid_data.drop('Unnamed: 1368', axis=1, inplace=True)
+valid_data.drop('Unnamed: 1378', axis=1, inplace=True)
+valid_data.drop('Unnamed: 1388', axis=1, inplace=True)
+valid_data.drop(0, axis=0, inplace=True)
+valid_data = valid_data.dropna()
+X = valid_data.iloc[:, :-1]
+y = valid_data.iloc[:, -1]
+
+#%%
+
+from sklearn.model_selection import train_test_split as tts
+from sklearn.linear_model import LinearRegression
+linreg = LinearRegression()
+X_train, X_test, y_train, y_test = tts(X, y, test_size=0.3, random_state=10)
+linreg.fit(X_train, y_train)
+my_pred = linreg.predict(X_test)
+my_score = linreg.score(X_test, y_test)
+print(my_score)
+
+#%%
+
+# First Dose Administered
+x = []
+y = 9
+for i in range(139):
+    x.append(y)
+    y += 10
+valid_data = data.iloc[:, x]
+valid_data.drop('Unnamed: 1349', axis=1, inplace=True)
+valid_data.drop('Unnamed: 1359', axis=1, inplace=True)
+valid_data.drop('Unnamed: 1369', axis=1, inplace=True)
+valid_data.drop('Unnamed: 1379', axis=1, inplace=True)
+valid_data.drop('Unnamed: 1389', axis=1, inplace=True)
+valid_data.drop(0, axis=0, inplace=True)
+valid_data = valid_data.dropna()
+X = valid_data.iloc[:, :-1]
+y = valid_data.iloc[:, -1]
+
+#%%
+
+from sklearn.model_selection import train_test_split as tts
+from sklearn.linear_model import LinearRegression
+linreg = LinearRegression()
+X_train, X_test, y_train, y_test = tts(X, y, test_size=0.3, random_state=10)
+linreg.fit(X_train, y_train)
+my_pred = linreg.predict(X_test)
+my_score = linreg.score(X_test, y_test)
+print(my_score)
+
+#%%
+
+# Second Dose Administered
+x = []
+y = 10
+for i in range(139):
+    x.append(y)
+    y += 10
+valid_data = data.iloc[:, x]
+valid_data.drop('Unnamed: 1350', axis=1, inplace=True)
+valid_data.drop('Unnamed: 1360', axis=1, inplace=True)
+valid_data.drop('Unnamed: 1370', axis=1, inplace=True)
+valid_data.drop('Unnamed: 1380', axis=1, inplace=True)
+valid_data.drop('Unnamed: 1390', axis=1, inplace=True)
+valid_data.drop(0, axis=0, inplace=True)
+valid_data = valid_data.dropna()
+X = valid_data.iloc[:, :-1]
+y = valid_data.iloc[:, -1]
+
+from sklearn.model_selection import train_test_split as tts
+from sklearn.linear_model import LinearRegression
+linreg = LinearRegression()
+X_train, X_test, y_train, y_test = tts(X, y, test_size=0.3, random_state=10)
+linreg.fit(X_train, y_train)
+my_pred = linreg.predict(X_test)
+my_score = linreg.score(X_test, y_test)
+print(my_score)
+
+#%%
+
+# Male(Individuals Vaccinated)
+x = []
+y = 11
+for i in range(139):
+    x.append(y)
+    y += 10
+valid_data = data.iloc[:, x]
+valid_data.drop('Unnamed: 1351', axis=1, inplace=True)
+valid_data.drop('Unnamed: 1361', axis=1, inplace=True)
+valid_data.drop('Unnamed: 1371', axis=1, inplace=True)
+valid_data.drop('Unnamed: 1381', axis=1, inplace=True)
+valid_data.drop('Unnamed: 1391', axis=1, inplace=True)
+valid_data.drop(0, axis=0, inplace=True)
+valid_data = valid_data.dropna()
+X = valid_data.iloc[:, :-1]
+y = valid_data.iloc[:, -1]
+
+from sklearn.model_selection import train_test_split as tts
+from sklearn.linear_model import LinearRegression
+linreg = LinearRegression()
+X_train, X_test, y_train, y_test = tts(X, y, test_size=0.3, random_state=10)
+linreg.fit(X_train, y_train)
+my_pred = linreg.predict(X_test)
+my_score = linreg.score(X_test, y_test)
+print(my_score)
+
+#%%
+
+# Female(Individuals Vaccinated)
+x = []
+y = 12
+for i in range(139):
+    x.append(y)
+    y += 10
+valid_data = data.iloc[:, x]
+valid_data.drop('Unnamed: 1352', axis=1, inplace=True)
+valid_data.drop('Unnamed: 1362', axis=1, inplace=True)
+valid_data.drop('Unnamed: 1372', axis=1, inplace=True)
+valid_data.drop('Unnamed: 1382', axis=1, inplace=True)
+valid_data.drop('Unnamed: 1392', axis=1, inplace=True)
+valid_data.drop(0, axis=0, inplace=True)
+valid_data = valid_data.dropna()
+X = valid_data.iloc[:, :-1]
+y = valid_data.iloc[:, -1]
+
+from sklearn.model_selection import train_test_split as tts
+from sklearn.linear_model import LinearRegression
+linreg = LinearRegression()
+X_train, X_test, y_train, y_test = tts(X, y, test_size=0.3, random_state=10)
+linreg.fit(X_train, y_train)
+my_pred = linreg.predict(X_test)
+my_score = linreg.score(X_test, y_test)
+print(my_score)
+
+#%%
+
+# Transgender(Individuals Vaccinated)
+x = []
+y = 13
+for i in range(139):
+    x.append(y)
+    y += 10
+valid_data = data.iloc[:, x]
+valid_data.drop('Unnamed: 1353', axis=1, inplace=True)
+valid_data.drop('Unnamed: 1363', axis=1, inplace=True)
+valid_data.drop('Unnamed: 1373', axis=1, inplace=True)
+valid_data.drop('Unnamed: 1383', axis=1, inplace=True)
+valid_data.drop('Unnamed: 1393', axis=1, inplace=True)
+valid_data.drop(0, axis=0, inplace=True)
+valid_data = valid_data.dropna()
+X = valid_data.iloc[:, :-1]
+y = valid_data.iloc[:, -1]
+
+from sklearn.model_selection import train_test_split as tts
+from sklearn.linear_model import LinearRegression
+linreg = LinearRegression()
+X_train, X_test, y_train, y_test = tts(X, y, test_size=0.3, random_state=10)
+linreg.fit(X_train, y_train)
+my_pred = linreg.predict(X_test)
+my_score = linreg.score(X_test, y_test)
+print(my_score)
+
+#%%
+
+# Total Covaxin Administered
+x = []
+y = 14
+for i in range(139):
+    x.append(y)
+    y += 10
+valid_data = data.iloc[:, x]
+valid_data.drop('Unnamed: 1354', axis=1, inplace=True)
+valid_data.drop('Unnamed: 1364', axis=1, inplace=True)
+valid_data.drop('Unnamed: 1374', axis=1, inplace=True)
+valid_data.drop('Unnamed: 1384', axis=1, inplace=True)
+valid_data.drop('Unnamed: 1394', axis=1, inplace=True)
+valid_data.drop(0, axis=0, inplace=True)
+valid_data = valid_data.dropna()
+X = valid_data.iloc[:, :-1]
+y = valid_data.iloc[:, -1]
+
+from sklearn.model_selection import train_test_split as tts
+from sklearn.linear_model import LinearRegression
+linreg = LinearRegression()
+X_train, X_test, y_train, y_test = tts(X, y, test_size=0.3, random_state=10)
+linreg.fit(X_train, y_train)
+my_pred = linreg.predict(X_test)
+my_score = linreg.score(X_test, y_test)
+print(my_score)
+
+#%%
+
+# Total CoviShield Administered
+x = []
+y = 15
+for i in range(139):
+    x.append(y)
+    y += 10
+valid_data = data.iloc[:, x]
+valid_data.drop('Unnamed: 1355', axis=1, inplace=True)
+valid_data.drop('Unnamed: 1365', axis=1, inplace=True)
+valid_data.drop('Unnamed: 1375', axis=1, inplace=True)
+valid_data.drop('Unnamed: 1385', axis=1, inplace=True)
+valid_data.drop('Unnamed: 1395', axis=1, inplace=True)
+valid_data.drop(0, axis=0, inplace=True)
+valid_data = valid_data.dropna()
+X = valid_data.iloc[:, :-1]
+y = valid_data.iloc[:, -1]
+
+from sklearn.model_selection import train_test_split as tts
+from sklearn.linear_model import LinearRegression
+linreg = LinearRegression()
+X_train, X_test, y_train, y_test = tts(X, y, test_size=0.3, random_state=10)
+linreg.fit(X_train, y_train)
+my_pred = linreg.predict(X_test)
+my_score = linreg.score(X_test, y_test)
+print(my_score)
+
+#%%
+
+# Total CoviShield Administered
+x = []
+y = 15
+for i in range(139):
+    x.append(y)
+    y += 10
+valid_data = data.iloc[:, x]
+valid_data.drop('Unnamed: 1355', axis=1, inplace=True)
+valid_data.drop('Unnamed: 1365', axis=1, inplace=True)
+valid_data.drop('Unnamed: 1375', axis=1, inplace=True)
+valid_data.drop('Unnamed: 1385', axis=1, inplace=True)
+valid_data.drop('Unnamed: 1395', axis=1, inplace=True)
+valid_data.drop(0, axis=0, inplace=True)
+valid_data = valid_data.dropna()
+
+#%%
+
+X_train = valid_data.iloc[:, :-2]
+y_train = valid_data.iloc[:, -2]
+X_test = valid_data.iloc[:, 1:-1]
+y_test = valid_data.iloc[:, -1]
+
+#%%
+
+linreg.fit(X_train, y_train)
+
+#%%
+
+my_pred = linreg.predict(X_test)
+
+#%%
+
+my_score = linreg.score(X_test, y_test)
+
+#%%
+
+print(my_score)
+
+#%%
+
+sns.countplot(x='16/01/2021.9', data=valid_data)
+
+#%%
+
+data
+
+#%%
+
+data = data.iloc[2:, :]
+
+#%%
+
+data
+
+#%%
+
+sns.distplot(data['16/01/2021.9'])
+
+#%%
+
+sns.stripplot(data['16/01/2021.1'], data['17/01/2021.1'])
+
+#%%
+
+sns.countplot(data['State_Code'])
+
+#%%
+
+small_data1 = data.iloc[0:3, :]
+
+#%%
+
+sns.countplot(small_data1['State_Code'])
+
+#%%
+
+small_data2 = data.iloc[3:, :]
+
+#%%
+
+sns.countplot(small_data2['State_Code'])
